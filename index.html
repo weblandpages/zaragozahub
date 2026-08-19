@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ZaragozaHub.com — Coworking y comunidad profesional en Zaragoza</title>
+<meta name="description" content="ZaragozaHub.com: coworking en Zaragoza para profesionales, emprendedores, freelancers y equipos. Puestos de trabajo, salas, networking y comunidad profesional.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://zaragozahub.com/">
+
+
+
+<style>
+:root{--bg:#f7f9fc;--card:#fff;--text:#172033;--muted:#667085;--primary:#1f5eff;--primary-dark:#1748c9;--border:#e7eaf0;--soft:#eef4ff}
+*{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth}
+body{font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;background:radial-gradient(circle at top right,rgba(31,94,255,.08),transparent 30rem),linear-gradient(180deg,#f8fbff 0%,#f7f9fc 100%);color:var(--text);line-height:1.6}
+.container{width:min(1120px,calc(100% - 40px));margin:0 auto}
+header{padding:22px 0;border-bottom:1px solid rgba(231,234,240,.8);background:rgba(255,255,255,.8);backdrop-filter:blur(10px);position:sticky;top:0;z-index:10}
+nav{display:flex;align-items:center;justify-content:space-between;gap:24px}
+.brand{font-weight:800;font-size:1.24rem;letter-spacing:-.035em;color:var(--text);text-decoration:none}.brand span{color:var(--primary)}
+.nav-actions{display:flex;align-items:center;gap:18px}.nav-link{color:var(--muted);text-decoration:none;font-size:.95rem;font-weight:600}
+.language-switch{display:flex;gap:4px;padding:4px;border:1px solid var(--border);background:#fff;border-radius:10px}
+.language-switch button{border:0;background:transparent;color:var(--muted);font:inherit;font-size:.82rem;font-weight:800;padding:6px 9px;border-radius:7px;cursor:pointer}
+.language-switch button.active{background:var(--text);color:#fff}
+.hero{min-height:72vh;display:flex;align-items:center;padding:80px 0 70px}.hero-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:70px;align-items:center}
+.eyebrow{display:inline-flex;padding:7px 12px;border:1px solid #dbe5ff;background:var(--soft);color:var(--primary);border-radius:999px;font-size:.82rem;font-weight:700;margin-bottom:22px}
+h1{font-size:clamp(3rem,7vw,5.9rem);line-height:.98;letter-spacing:-.065em;max-width:860px}.hero p{margin-top:26px;font-size:1.18rem;color:var(--muted);max-width:700px}
+.actions{margin-top:32px;display:flex;gap:14px;flex-wrap:wrap}.btn{display:inline-flex;align-items:center;justify-content:center;text-decoration:none;border-radius:12px;padding:13px 20px;font-weight:700;transition:.2s ease}
+.btn-primary{background:var(--primary);color:#fff;box-shadow:0 10px 30px rgba(31,94,255,.18)}.btn-primary:hover{background:var(--primary-dark);transform:translateY(-1px)}
+.btn-secondary{background:#fff;color:var(--text);border:1px solid var(--border)}.btn-secondary:hover{border-color:#cbd2dc;transform:translateY(-1px)}
+.preview{background:var(--card);border:1px solid var(--border);border-radius:24px;padding:24px;box-shadow:0 24px 70px rgba(31,46,78,.08)}
+.preview-top{display:flex;gap:7px;margin-bottom:24px}.dot{width:9px;height:9px;border-radius:50%;background:#d9dee7}
+.mini-card{padding:18px;border-radius:16px;border:1px solid var(--border);margin-top:12px;background:#fbfcfe}.mini-card strong{display:block;margin-bottom:4px}.mini-card span{color:var(--muted);font-size:.92rem}
+.section{padding:80px 0}.section-title{text-align:center;max-width:780px;margin:0 auto 42px}.section-title h2{font-size:clamp(2rem,4vw,3.2rem);letter-spacing:-.045em;line-height:1.05}.section-title p{color:var(--muted);margin-top:14px}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.card{background:#fff;border:1px solid var(--border);border-radius:18px;padding:26px}
+.icon{width:42px;height:42px;border-radius:12px;background:var(--soft);display:grid;place-items:center;color:var(--primary);font-weight:800;margin-bottom:18px}.card h3{font-size:1.1rem;margin-bottom:7px}.card p{color:var(--muted);font-size:.95rem}
+.cta{margin:50px auto 80px;background:var(--text);color:#fff;border-radius:24px;padding:48px;text-align:center}.cta h2{font-size:clamp(2rem,4vw,3rem);letter-spacing:-.045em}.cta p{color:#cbd2dc;margin-top:10px}
+footer{border-top:1px solid var(--border);padding:28px 0 40px;color:var(--muted);font-size:.9rem}.footer-row{display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap}
+@media(max-width:800px){.hero{min-height:auto;padding-top:60px}.hero-grid{grid-template-columns:1fr;gap:38px}.cards{grid-template-columns:1fr}.preview{max-width:560px}.nav-link{display:none}}
+</style>
+</head>
+<body>
+<header><div class="container"><nav>
+<a href="#" class="brand">Zaragoza<span>Hub</span></a>
+<div class="nav-actions">
+<a href="#about" class="nav-link" data-i18n="navAbout">Sobre el espacio</a>
+<div class="language-switch" aria-label="Language selector">
+<button id="lang-es" class="active" onclick="setLanguage('es')">ES</button>
+<button id="lang-en" onclick="setLanguage('en')">EN</button>
+</div>
+</div>
+</nav></div></header>
+
+<main>
+<section class="hero"><div class="container hero-grid">
+<div>
+<div class="eyebrow" data-i18n="eyebrow">✦ Coworking · Zaragoza · Comunidad</div>
+<h1 data-i18n="heroTitle">Un hub para trabajar, conectar y crecer en Zaragoza.</h1>
+<p data-i18n="heroText">ZaragozaHub.com nace como un punto de encuentro para profesionales, emprendedores, freelancers y equipos que buscan flexibilidad, productividad y nuevas conexiones en un entorno de coworking en Zaragoza.</p>
+<div class="actions">
+<a href="#about" class="btn btn-primary" data-i18n="discover">Descubrir el espacio</a>
+<a href="#coming" class="btn btn-secondary" data-i18n="comingSoon">Próximamente</a>
+</div>
+</div>
+<div class="preview">
+<div class="preview-top"><div class="dot"></div><div class="dot"></div><div class="dot"></div></div>
+<div class="mini-card"><strong data-i18n="workspace">💻 Espacios de trabajo</strong><span data-i18n="workspaceText">Puestos flexibles para profesionales independientes, trabajo híbrido y equipos.</span></div>
+<div class="mini-card"><strong data-i18n="meetings">🤝 Salas y reuniones</strong><span data-i18n="meetingsText">Entornos profesionales para reuniones, videollamadas y colaboración.</span></div>
+<div class="mini-card"><strong data-i18n="community">🌐 Comunidad</strong><span data-i18n="communityText">Conecta con talento, proyectos y oportunidades profesionales en Zaragoza.</span></div>
+</div>
+</div></section>
+
+<section class="section" id="about"><div class="container">
+<div class="section-title">
+<h2 data-i18n="sectionTitle">Más que coworking: un punto de conexión profesional.</h2>
+<p data-i18n="sectionText">Un espacio pensado para combinar trabajo flexible, comunidad, networking y colaboración en Zaragoza.</p>
+</div>
+<div class="cards">
+<article class="card"><div class="icon">01</div><h3 data-i18n="flexibility">Flexibilidad</h3><p data-i18n="flexibilityText">Opciones adaptadas a autónomos, profesionales remotos, startups y equipos.</p></article>
+<article class="card"><div class="icon">02</div><h3 data-i18n="productivity">Productividad</h3><p data-i18n="productivityText">Un entorno preparado para concentrarte, reunirte y avanzar en tus proyectos.</p></article>
+<article class="card"><div class="icon">03</div><h3 data-i18n="networking">Networking</h3><p data-i18n="networkingText">Un lugar para compartir ideas, crear contactos y detectar nuevas oportunidades.</p></article>
+</div>
+</div></section>
+
+<section class="container" id="coming"><div class="cta">
+<h2 data-i18n="ctaTitle">Estamos preparando ZaragozaHub.com</h2>
+<p data-i18n="ctaText">Próximamente encontrarás más información sobre espacios, servicios y comunidad profesional.</p>
+</div></section>
+</main>
+
+<footer><div class="container footer-row"><strong>ZaragozaHub.com</strong><span>© 2026 ZaragozaHub.com</span></div></footer>
+
+<script>
+const translations={
+es:{
+pageTitle:"ZaragozaHub.com — Coworking y comunidad profesional en Zaragoza",
+description:"ZaragozaHub.com: coworking en Zaragoza para profesionales, emprendedores, freelancers y equipos. Puestos de trabajo, salas, networking y comunidad profesional.",
+navAbout:"Sobre el espacio",eyebrow:"✦ Coworking · Zaragoza · Comunidad",heroTitle:"Un hub para trabajar, conectar y crecer en Zaragoza.",
+heroText:"ZaragozaHub.com nace como un punto de encuentro para profesionales, emprendedores, freelancers y equipos que buscan flexibilidad, productividad y nuevas conexiones en un entorno de coworking en Zaragoza.",
+discover:"Descubrir el espacio",comingSoon:"Próximamente",workspace:"💻 Espacios de trabajo",workspaceText:"Puestos flexibles para profesionales independientes, trabajo híbrido y equipos.",
+meetings:"🤝 Salas y reuniones",meetingsText:"Entornos profesionales para reuniones, videollamadas y colaboración.",
+community:"🌐 Comunidad",communityText:"Conecta con talento, proyectos y oportunidades profesionales en Zaragoza.",
+sectionTitle:"Más que coworking: un punto de conexión profesional.",sectionText:"Un espacio pensado para combinar trabajo flexible, comunidad, networking y colaboración en Zaragoza.",
+flexibility:"Flexibilidad",flexibilityText:"Opciones adaptadas a autónomos, profesionales remotos, startups y equipos.",
+productivity:"Productividad",productivityText:"Un entorno preparado para concentrarte, reunirte y avanzar en tus proyectos.",
+networking:"Networking",networkingText:"Un lugar para compartir ideas, crear contactos y detectar nuevas oportunidades.",
+ctaTitle:"Estamos preparando ZaragozaHub.com",ctaText:"Próximamente encontrarás más información sobre espacios, servicios y comunidad profesional."
+},
+en:{
+pageTitle:"ZaragozaHub.com — Coworking and professional community in Zaragoza",
+description:"ZaragozaHub.com: coworking in Zaragoza for professionals, entrepreneurs, freelancers and teams. Workspaces, meeting rooms, networking and professional community.",
+navAbout:"About the space",eyebrow:"✦ Coworking · Zaragoza · Community",heroTitle:"A hub to work, connect and grow in Zaragoza.",
+heroText:"ZaragozaHub.com is designed as a meeting point for professionals, entrepreneurs, freelancers and teams looking for flexibility, productivity and new connections in a coworking environment in Zaragoza.",
+discover:"Discover the space",comingSoon:"Coming soon",workspace:"💻 Workspaces",workspaceText:"Flexible desks for independent professionals, hybrid work and teams.",
+meetings:"🤝 Rooms & meetings",meetingsText:"Professional environments for meetings, video calls and collaboration.",
+community:"🌐 Community",communityText:"Connect with talent, projects and professional opportunities in Zaragoza.",
+sectionTitle:"More than coworking: a professional connection point.",sectionText:"A space designed to combine flexible work, community, networking and collaboration in Zaragoza.",
+flexibility:"Flexibility",flexibilityText:"Options for freelancers, remote professionals, startups and teams.",
+productivity:"Productivity",productivityText:"An environment designed to help you focus, meet and move projects forward.",
+networking:"Networking",networkingText:"A place to share ideas, build contacts and discover new opportunities.",
+ctaTitle:"We are building ZaragozaHub.com",ctaText:"More information about workspaces, services and the professional community will be available soon."
+}};
+function setLanguage(lang){
+const t=translations[lang]||translations.es;
+document.documentElement.lang=lang;
+document.title=t.pageTitle;
+const meta=document.querySelector('meta[name="description"]');if(meta)meta.setAttribute("content",t.description);
+document.querySelectorAll("[data-i18n]").forEach(el=>{const key=el.getAttribute("data-i18n");if(t[key])el.textContent=t[key];});
+document.getElementById("lang-es").classList.toggle("active",lang==="es");
+document.getElementById("lang-en").classList.toggle("active",lang==="en");
+localStorage.setItem("zaragozahub-language",lang);
+}
+const savedLanguage=localStorage.getItem("zaragozahub-language");
+const browserLanguage=(navigator.language||"").toLowerCase();
+let initialLanguage="es";
+if(browserLanguage.startsWith("en"))initialLanguage="en";
+setLanguage(savedLanguage||initialLanguage);
+</script>
+</body>
+</html>
